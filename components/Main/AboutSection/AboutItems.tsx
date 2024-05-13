@@ -65,8 +65,8 @@ const AboutItems = () => {
           <div className="w-full md:w-full h-[28rem] md:h-[37rem] lg:h-[30rem] xl:h-[34rem] relative rounded-md overflow-hidden border-2 border-cyan backdrop-blur-sm bg-cyan/20 z-20 ">
             <div className="relative w-full h-full duration-500 grayscale group-hover:grayscale-0">
               <Image
-                src={"/images/david.jpeg"}
                 className="object-cover"
+                src={"/images/david.jpeg"}
                 alt="moi"
                 priority={true}
                 fill
