@@ -21,7 +21,7 @@ const HeadSection = ({ title, page }: Props) => {
       />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={""} />
-      <meta property="og:url" content="https://xeuxdev.vercel.app" />
+      <meta property="og:url" content="https://davididowu.netlify.app" />
       <meta
         property="og:description"
         content={`${page} Page of My Portfolio`}
