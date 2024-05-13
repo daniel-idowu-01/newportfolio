@@ -1,6 +1,6 @@
-import { m } from "framer-motion"
-import Image from "next/image"
-import { aboutVariant } from "../../../variants/aboutVariant"
+import { m } from "framer-motion";
+import Image from "next/image";
+import { aboutVariant } from "../../../variants/aboutVariant";
 
 const AboutItems = () => {
   return (
@@ -18,7 +18,7 @@ const AboutItems = () => {
           >
             <p>Hi{"👋, "} I&apos;m</p>
             <p className="relative font-semibold font-pop text-cyan w-fit">
-              Tochukwu John,
+              Idowu David,
             </p>
           </m.h1>
           {/* info */}
@@ -30,13 +30,14 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              A sophomore computer science student, As a results and performance
-              driven Frontend Developer with one year of professional
-              experience, specializing in crafting interactive and visually
-              appealing user interfaces. Proficient in leveraging the latest
-              technologies and design systems, my goal is to deliver superior,
-              user-centric solutions that align with both client and company
-              requirements.
+              I am a determined professional that learns quickly and adapts to
+              new situations. Experienced in designing and creating robust
+              mobile/web apps, optimising RESTful APIs, and promoting Test
+              Driven Development Methodologies to enhance user experience and
+              solve challenges. These projects provided valuable industry
+              information and prepared me for future professional challenges. I
+              am a confident, direct, enthusiastic individual who prioritises
+              teamwork, collaboration, and delivering high-quality results.
             </m.p>
             <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"
@@ -51,29 +52,6 @@ const AboutItems = () => {
               delivering the best and most user-friendly experiences, I am adept
               at meeting project goals efficiently and on schedule.
             </m.p>
-            <m.p
-              className="mb-6 text-lg font-normal text-text lg:text-xl"
-              variants={aboutVariant}
-              initial={{ opacity: 0, y: 25 }}
-              whileInView={aboutVariant.p2}
-              viewport={{ once: true }}
-            >
-              Transformng my creativity and knowledge into websites have been my
-              passion for months now. During this time, I have helped various
-              clients establish their presence online. I also love learning new
-              technologies and frameworks.
-            </m.p>
-            <m.p
-              className="mb-6 text-lg font-normal text-text lg:text-xl md:mb-11"
-              initial={{ opacity: 0, y: 20 }}
-              variants={aboutVariant}
-              whileInView={aboutVariant.p3}
-              viewport={{ once: true }}
-            >
-              Additionally, i am a lover of open source softwares and i&apos;m
-              also looking for internships and projects to boost my skills and
-              to get experience in Frontend Development.
-            </m.p>
           </div>
         </div>
         {/* images/illustrsions */}
@@ -87,13 +65,14 @@ const AboutItems = () => {
           <div className="w-full md:w-full h-[28rem] md:h-[37rem] lg:h-[30rem] xl:h-[34rem] relative rounded-md overflow-hidden border-2 border-cyan backdrop-blur-sm bg-cyan/20 z-20 ">
             <div className="relative w-full h-full duration-500 grayscale group-hover:grayscale-0">
               <Image
-                src={"/images/me.webp"}
+                src={"/images/david.jpeg"}
+                className="object-cover"
                 alt="moi"
                 priority={true}
                 fill
                 quality={100}
                 placeholder={"blur"}
-                blurDataURL={"/images/me.webp"}
+                blurDataURL={"/images/david.jpeg"}
               />
             </div>
           </div>
@@ -101,7 +80,7 @@ const AboutItems = () => {
         </m.div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default AboutItems
+export default AboutItems;
