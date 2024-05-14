@@ -40,10 +40,10 @@ const ContactIconsMobile = () => {
         <div className="list-none">
           <div className="md:rotate-90">
             <Link
-              href={`mailto:xeuxdev@gmail.com`}
+              href={`mailto:davididowu172@gmail.com`}
               className="text-sm font-semibold duration-200 text-text hover:text-cyan font-pop "
             >
-              xeuxdev@gmail.com
+              davididowu172@gmail.com
             </Link>
           </div>
         </div>
