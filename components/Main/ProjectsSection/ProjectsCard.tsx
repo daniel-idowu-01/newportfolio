@@ -1,19 +1,19 @@
-import { m } from "framer-motion"
-import Image from "next/image"
-import Link from "next/link"
-import { projectVariant } from "../../../variants/projectVariant"
-import Github from "../../Utils/icons/Github"
-import LiveLink from "./icon/LiveLink"
+import { m } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { projectVariant } from "../../../variants/projectVariant";
+import Github from "../../Utils/icons/Github";
+import LiveLink from "./icon/LiveLink";
 
 export type ProjectCardprops = {
-  image: string
-  name: string
-  about: string
-  link: string
-  liveLink: string
-  builtWith: string[]
-  orientation: number
-}
+  image: string;
+  name: string;
+  about: string;
+  link: string;
+  liveLink: string;
+  builtWith: string[];
+  orientation: number;
+};
 
 const ProjectsCard = ({
   about,
@@ -37,15 +37,19 @@ const ProjectsCard = ({
         <div
           className={`absolute inset-0 w-[20rem] h-[33rem] sm:h-[30rem] lg:top-1/2 lg:-translate-y-1/2 flex lg:items-start flex-col`}
         >
-          <Link
-            href={`${liveLink}`}
+          <span
             className={`min-w-[20rem] w-[37rem] md:w-[50rem] lg:w-[42rem] h-[33rem] sm:h-[30rem] lg:h-[22rem] xl:h-[28rem] absolute  rounded-xl duration-300 cursor-pointer opacity-10 lg:opacity-25 hover:opacity-50 ${
               orientation === 1 ? "lg:left-0" : "lg:left-full"
             }`}
-            target="_blank"
           >
-            <Image src={`/${image}`} alt={`${name} image`} fill priority />
-          </Link>
+            <Image
+              className=" object-contain"
+              src={`/${image}`}
+              alt={`${name} image`}
+              fill
+              priority
+            />
+          </span>
         </div>
 
         {/* text */}
@@ -56,13 +60,9 @@ const ProjectsCard = ({
               : "absolute top-1/2 left-0 -translate-y-1/2 max-w-xl px-6 py-8 lg:p-0 flex lg:items-start flex-col w-full"
           }`}
         >
-          <Link
-            href={`${link}`}
-            className="mb-4 text-xl font-bold tracking-wider text-white capitalize cursor-pointer select-none lg:text-2xl"
-            target="_blank"
-          >
+          <span className="mb-4 text-xl font-bold tracking-wider text-white capitalize cursor-pointer select-none lg:text-2xl">
             {name}
-          </Link>
+          </span>
           <div className="py-5 mb-4 text-base font-normal text-white duration-300 rounded-lg shadow-xl md:bg-gray/90 lg:text-lg md:p-6 lg:px-7 lg:py-7 hover:shadow-2xl hover:-translate-y-1">
             {about}
           </div>
@@ -76,7 +76,7 @@ const ProjectsCard = ({
               </span>
             ))}
           </div>
-          <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
+          {/* <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
             <Link
               href={`${link}`}
               target="_blank"
@@ -95,11 +95,11 @@ const ProjectsCard = ({
                 <LiveLink />
               </>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </m.div>
-  )
-}
+  );
+};
 
-export default ProjectsCard
+export default ProjectsCard;
