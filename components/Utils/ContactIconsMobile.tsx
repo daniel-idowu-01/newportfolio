@@ -24,12 +24,12 @@ const ContactIconsMobile = () => {
             </IconLinks>
           </li>
           <li className="w-5 h-5">
-            <IconLinks link="https://linkedin.com/in/xeuxdev" name="Linkedin">
+            <IconLinks link="https://www.linkedin.com/in/david-idowu-970b0a204" name="Linkedin">
               <LinkedIn />
             </IconLinks>
           </li>
           <li className="w-5 h-5">
-            <IconLinks link="https://twitter.com/xeuxdev" name="Twitter">
+            <IconLinks link="https://twitter.com/konathegod" name="Twitter">
               <Twitter />
             </IconLinks>
           </li>
