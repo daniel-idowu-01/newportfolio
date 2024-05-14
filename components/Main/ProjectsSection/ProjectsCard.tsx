@@ -9,8 +9,6 @@ export type ProjectCardprops = {
   image: string;
   name: string;
   about: string;
-  link: string;
-  liveLink: string;
   builtWith: string[];
   orientation: number;
 };
@@ -18,9 +16,7 @@ export type ProjectCardprops = {
 const ProjectsCard = ({
   about,
   image,
-  link,
   name,
-  liveLink,
   builtWith,
   orientation,
 }: ProjectCardprops) => {
