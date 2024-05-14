@@ -18,11 +18,11 @@ const ContactIconsMobile = () => {
       {/* left */}
       <div className="left-0 right-auto flex items-center justify-center border-cyan">
         <ul className="flex space-x-6 list-none lg:flex-col">
-          <li className="w-5 h-5">
+          {/* <li className="w-5 h-5">
             <IconLinks link="https://github.com/xeuxdev" name="Github">
               <Github />
             </IconLinks>
-          </li>
+          </li> */}
           <li className="w-5 h-5">
             <IconLinks link="https://www.linkedin.com/in/david-idowu-970b0a204" name="Linkedin">
               <LinkedIn />
