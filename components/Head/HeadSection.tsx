@@ -17,11 +17,11 @@ const HeadSection = ({ title, page }: Props) => {
       <meta name="description" content={`${page} Page of My Portfolio`} />
       <meta
         name="keywords"
-        content={`Idowu David, Idowu David, React, Nextjs, Portfolio, Full stack, ${page}`}
+        content={`Idowu Daniel, Idowu Daniel, React, Nextjs, Portfolio, Full stack, ${page}`}
       />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={""} />
-      <meta property="og:url" content="https://davididowu.netlify.app" />
+      <meta property="og:url" content="https://danielidowu.netlify.app" />
       <meta
         property="og:description"
         content={`${page} Page of My Portfolio`}

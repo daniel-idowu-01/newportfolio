@@ -34,7 +34,7 @@ const HeroSection = () => {
           >
             <span className=" w-fit">Idowu</span>
             <span className="relative text-cyan before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 md:before:h-2 md:before:-bottom-3 before:block before:bg-cyan before:rounded-full">
-              David.
+              Daniel.
             </span>
           </m.h1>
         </div>

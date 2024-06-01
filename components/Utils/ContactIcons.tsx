@@ -18,30 +18,30 @@ const ContactIcons = () => {
       {/* left */}
       <div className="fixed bottom-0 right-auto z-30 flex items-center justify-center w-10 px-0 py-0 border-cyan lg:left-3 left-10">
         <ul className="flex lg:flex-col space-x-6 lg:space-x-0 lg:space-y-6 list-none  after:hidden lg:after:block after:h-24 after:w-[2px] after:mx-auto after:bg-white after:mt-4  ">
-          {/* <m.li
-            className="w-5 h-5"
-            whileHover={{ y: -5, transition: { duration: 0.3 } }}
-          >
-            <IconLinks link="https://github.com/xeuxdev" name="Github">
-              <Github />
-            </IconLinks>
-          </m.li> */}
           <m.li
             className="w-5 h-5"
             whileHover={{ y: -5, transition: { duration: 0.3 } }}
           >
-            <IconLinks link="https://www.linkedin.com/in/david-idowu-970b0a204" name="Linkedin">
-              <LinkedIn />
+            <IconLinks link="https://github.com/daniel-idowu-01" name="Github">
+              <Github />
             </IconLinks>
           </m.li>
           <m.li
+            className="w-5 h-5"
+            whileHover={{ y: -5, transition: { duration: 0.3 } }}
+          >
+            <IconLinks link="https://www.linkedin.com/in/daniel-idowu/" name="Linkedin">
+              <LinkedIn />
+            </IconLinks>
+          </m.li>
+          {/* <m.li
             className="w-5 h-5"
             whileHover={{ y: -5, transition: { duration: 0.3 } }}
           >
             <IconLinks link="https://twitter.com/konathegod" name="Twitter">
               <Twitter />
             </IconLinks>
-          </m.li>
+          </m.li> */}
         </ul>
       </div>
       {/* right */}
@@ -49,10 +49,10 @@ const ContactIcons = () => {
         <div className="list-none after:block after:h-24 after:w-[2px] after:mx-auto after:bg-white after:mt-20 ">
           <div className="md:rotate-90">
             <Link
-              href={`mailto:davididowu172@gmail.com`}
+              href={`mailto:danielidowu414@gmail.com`}
               className="text-sm font-semibold duration-200 text-text hover:text-cyan font-pop "
             >
-              davididowu172@gmail.com
+              danielidowu414@gmail.com
             </Link>
           </div>
         </div>

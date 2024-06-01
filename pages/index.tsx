@@ -4,7 +4,7 @@ import { HeroSection, HeadSection } from "../components"
 const Home: NextPage = () => {
   return (
     <>
-      <HeadSection title="Idowu David" page="Home" />
+      <HeadSection title="Idowu Daniel" page="Home" />
 
       <main className="relative w-full overflow-x-hidden font-pop bg-body bg-[url('/bg-hero.webp')]">
         <section className="relative z-20 flex items-center justify-center min-h-screen pt-28 pb-14 font-pop">

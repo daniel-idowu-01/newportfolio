@@ -18,21 +18,21 @@ const ContactIconsMobile = () => {
       {/* left */}
       <div className="left-0 right-auto flex items-center justify-center border-cyan">
         <ul className="flex space-x-6 list-none lg:flex-col">
-          {/* <li className="w-5 h-5">
-            <IconLinks link="https://github.com/xeuxdev" name="Github">
+          <li className="w-5 h-5">
+            <IconLinks link="https://github.com/daniel-idowu-01" name="Github">
               <Github />
             </IconLinks>
-          </li> */}
+          </li>
           <li className="w-5 h-5">
-            <IconLinks link="https://www.linkedin.com/in/david-idowu-970b0a204" name="Linkedin">
+            <IconLinks link="https://www.linkedin.com/in/daniel-idowu/" name="Linkedin">
               <LinkedIn />
             </IconLinks>
           </li>
-          <li className="w-5 h-5">
+          {/* <li className="w-5 h-5">
             <IconLinks link="https://twitter.com/konathegod" name="Twitter">
               <Twitter />
             </IconLinks>
-          </li>
+          </li> */}
         </ul>
       </div>
       {/* right */}
@@ -40,10 +40,10 @@ const ContactIconsMobile = () => {
         <div className="list-none">
           <div className="md:rotate-90">
             <Link
-              href={`mailto:davididowu172@gmail.com`}
+              href={`mailto:danielidowu414@gmail.com`}
               className="text-sm font-semibold duration-200 text-text hover:text-cyan font-pop "
             >
-              davididowu172@gmail.com
+              danielidowu414@gmail.com
             </Link>
           </div>
         </div>

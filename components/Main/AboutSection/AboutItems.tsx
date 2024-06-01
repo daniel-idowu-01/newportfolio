@@ -18,7 +18,7 @@ const AboutItems = () => {
           >
             <p>Hi{"👋, "} I&apos;m</p>
             <p className="relative font-semibold font-pop text-cyan w-fit">
-              Idowu David,
+              Idowu Daniel,
             </p>
           </m.h1>
           {/* info */}
@@ -66,13 +66,13 @@ const AboutItems = () => {
             <div className="relative w-full h-full duration-500 grayscale group-hover:grayscale-0">
               <Image
                 className="object-cover"
-                src={"/images/david.jpeg"}
+                src={"/images/daniel.jpeg"}
                 alt="moi"
                 priority={true}
                 fill
                 quality={100}
                 placeholder={"blur"}
-                blurDataURL={"/images/david.jpeg"}
+                blurDataURL={"/images/daniel.jpeg"}
               />
             </div>
           </div>
