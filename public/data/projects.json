@@ -1,42 +1,62 @@
 [
   {
-    "name": "RealTech",
-    "image": "images/projects/realtech.png",
-    "link": "",
-    "liveLink": "",
-    "about": "RealTech - Provide solutions to growing businesses using modern technological tools!",
-    "builtWith": ["react", "tailwindcss"]
+    "name": "InkQuill",
+    "image": "images/projects/inkquill.png",
+    "link": "https://github.com/daniel-idowu-01/inkquill",
+    "liveLink": "https://inkquill.vercel.app/",
+    "about": "InkQuill - A tool that uses AI to summarize PDFs and paraphrase texts.",
+    "builtWith": [
+      "nextjs",
+      "expressjs",
+      "tailwindcss",
+      "cohere-ai",
+      "ocr.space",
+      "shadcn"
+    ]
   },
   {
-    "name": "Coren",
-    "image": "images/projects/coren.png",
-    "link": "",
-    "liveLink": "",
-    "about": "Coren - The All-In-One software for engineers and engineering organizations.",
-    "builtWith": ["react", "tailwindcss", "framer-motion"]
+    "name": "InventoryFlow",
+    "image": "images/projects/inventoryflow.png",
+    "link": "https://github.com/daniel-idowu-01/inventoryflow",
+    "liveLink": "https://inventoryflow.netlify.app/",
+    "about": "InventoryFlow - An inventory management system for small businesses.",
+    "builtWith": ["react", "expressjs", "mongodb", "tailwindcss", "rechart"]
   },
   {
-    "name": "RedStore",
-    "image": "images/projects/redstore.jpg",
-    "link": "",
-    "liveLink": "",
-    "about": "RedStore - Your Universal E-Commerce Platform for workout equipments.",
-    "builtWith": ["react", "tailwindcss", "framer-motion", "mongodb"]
+    "name": "iReadLib",
+    "image": "images/projects/ireadlib.png",
+    "link": "https://github.com/daniel-idowu-01/ireadlib",
+    "liveLink": "https://ireadlib.netlify.app/",
+    "about": "iReadLib - An e-library platform for buying and selling books.",
+    "builtWith": [
+      "react",
+      "expressjs",
+      "tailwindcss",
+      "framer-motion",
+      "mongodb",
+      "swiperjs"
+    ]
   },
   {
-    "name": "Codewell",
-    "image": "images/projects/codewell.png",
-    "link": "",
-    "liveLink": "",
-    "about": "A little webpage featuring form validation and visualisations and logic on how frontend form / card validations should be done.",
-    "builtWith": ["vs code", "react", "tailwindcss", "javaScript", "vite"]
+    "name": "Exclusive",
+    "image": "images/projects/exclusive.png",
+    "link": "https://github.com/daniel-idowu-01/exclusive",
+    "liveLink": "https://exclusive-nu.vercel.app/",
+    "about": "Exclusive - Your universal e-commerce platform for every category of product.",
+    "builtWith": [
+      "react",
+      "tailwindcss",
+      "framer-motion",
+      "mongodb",
+      "flowbite"
+    ]
   },
   {
-    "name": "HillStations",
-    "image": "images/projects/hillstations.jpg",
-    "link": "",
-    "liveLink": "",
-    "about": "HillStations - Your General-Purpose E-Commerce Platform",
-    "builtWith": ["react", "tailwindcss", "mongodb"]
+    "name": "EliteTV",
+    "image": "images/projects/theelitetv.png",
+    "link": "https://github.com/daniel-idowu-01/eliteTV_UPDATED",
+    "liveLink": "https://theelitetv.netlify.app/",
+    "about": "EliteTV - A movie platform where users get information about movies",
+    "builtWith": ["react", "tailwindcss", "swiperjs"]
   }
 ]
