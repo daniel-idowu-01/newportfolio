@@ -62,7 +62,8 @@
       "tailwindcss",
       "framer-motion",
       "mongodb",
-      "flowbite"
+      "flowbite",
+      "supabase"
     ]
   },
   {
@@ -71,6 +72,6 @@
     "link": "https://github.com/daniel-idowu-01/eliteTV_UPDATED",
     "liveLink": "https://theelitetv.netlify.app/",
     "about": "EliteTV - A movie platform where users get information about movies",
-    "builtWith": ["react", "tailwindcss", "swiperjs"]
+    "builtWith": ["react", "tailwindcss", "swiperjs", "supabase"]
   }
 ]
