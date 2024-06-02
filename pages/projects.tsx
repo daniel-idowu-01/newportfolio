@@ -34,6 +34,8 @@ const Projects: NextPage = () => {
                 name={item.name}
                 image={item.image}
                 about={item.about}
+                link={item.link}
+                liveLink={item.liveLink}
                 builtWith={item.builtWith}
                 orientation={random()}
               />

@@ -8,6 +8,8 @@ import LiveLink from "./icon/LiveLink";
 export type ProjectCardprops = {
   image: string;
   name: string;
+  link: string;
+  liveLink: string;
   about: string;
   builtWith: string[];
   orientation: number;
@@ -17,6 +19,8 @@ const ProjectsCard = ({
   about,
   image,
   name,
+  link,
+  liveLink,
   builtWith,
   orientation,
 }: ProjectCardprops) => {
@@ -72,7 +76,7 @@ const ProjectsCard = ({
               </span>
             ))}
           </div>
-          {/* <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
+          <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
             <Link
               href={`${link}`}
               target="_blank"
@@ -91,7 +95,7 @@ const ProjectsCard = ({
                 <LiveLink />
               </>
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </m.div>

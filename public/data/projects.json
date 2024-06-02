@@ -2,30 +2,40 @@
   {
     "name": "RealTech",
     "image": "images/projects/realtech.png",
+    "link": "",
+    "liveLink": "",
     "about": "RealTech - Provide solutions to growing businesses using modern technological tools!",
     "builtWith": ["react", "tailwindcss"]
   },
   {
     "name": "Coren",
     "image": "images/projects/coren.png",
+    "link": "",
+    "liveLink": "",
     "about": "Coren - The All-In-One software for engineers and engineering organizations.",
     "builtWith": ["react", "tailwindcss", "framer-motion"]
   },
   {
     "name": "RedStore",
     "image": "images/projects/redstore.jpg",
+    "link": "",
+    "liveLink": "",
     "about": "RedStore - Your Universal E-Commerce Platform for workout equipments.",
     "builtWith": ["react", "tailwindcss", "framer-motion", "mongodb"]
   },
   {
     "name": "Codewell",
     "image": "images/projects/codewell.png",
+    "link": "",
+    "liveLink": "",
     "about": "A little webpage featuring form validation and visualisations and logic on how frontend form / card validations should be done.",
     "builtWith": ["vs code", "react", "tailwindcss", "javaScript", "vite"]
   },
   {
     "name": "HillStations",
     "image": "images/projects/hillstations.jpg",
+    "link": "",
+    "liveLink": "",
     "about": "HillStations - Your General-Purpose E-Commerce Platform",
     "builtWith": ["react", "tailwindcss", "mongodb"]
   }
