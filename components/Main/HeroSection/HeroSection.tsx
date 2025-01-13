@@ -1,9 +1,9 @@
-import Text from "../../Text/Text"
-import { AboutIcon } from "../icons"
-import HeroNav from "./HeroNav"
-import HireMeButton from "./HireMeButton"
-import ResumeButton from "./ResumeButton"
-import { m } from "framer-motion"
+import Text from "../../Text/Text";
+import { AboutIcon } from "../icons";
+import HeroNav from "./HeroNav";
+import HireMeButton from "./HireMeButton";
+import ResumeButton from "./ResumeButton";
+import { m } from "framer-motion";
 
 const HeroSection = () => {
   return (
@@ -63,17 +63,15 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            As a<span className="text-cyan"> Full Stack Developer,</span> I
-            specialize in building and launching dynamic user interfaces and
-            experiences that captivate both clients and companies. I harness the
-            power of the <Text text="efficient technologies " /> and{" "}
-            <Text text="design systems " /> to create interactive solutions that
-            leave a lasting impression. My primary objective is to deliver the
-            best, easiest, and most functional long-term solutions that not only
-            meet the requirements of the company but also exceed the
-            expectations of clients. With a strong commitment to user
-            satisfaction, I strive to create seamless and engaging experiences
-            that seamlessly blend aesthetic appeal with practical functionality.
+            As a<span className="text-cyan"> Backend Developer,</span> I
+            specialize in designing, developing, and maintaining secure,
+            scalable, and efficient backend systems. I leverage{" "}
+            <Text text="modern technologies " /> and best practices to build
+            robust solutions that power{" "}
+            <Text text="high-performance applications " />. My primary goal is
+            to deliver optimized, long-term systems that not only meet but often
+            exceed both the technical requirements of the company and the
+            expectations of clients.
           </m.p>
         </div>
         {/* buttons */}
@@ -105,7 +103,7 @@ const HeroSection = () => {
         </m.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

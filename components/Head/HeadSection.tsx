@@ -17,7 +17,7 @@ const HeadSection = ({ title, page }: Props) => {
       <meta name="description" content={`${page} Page of My Portfolio`} />
       <meta
         name="keywords"
-        content={`Idowu Daniel, Idowu Daniel, React, Nextjs, Portfolio, Full stack, ${page}`}
+        content={`Idowu Daniel, Expressjs, Python, Backend, ${page}`}
       />
       <meta property="og:title" content={title} />
       <meta property="og:site_name" content={""} />
