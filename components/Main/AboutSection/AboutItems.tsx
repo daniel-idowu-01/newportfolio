@@ -30,14 +30,14 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              I am a determined professional that learns quickly and adapts to
-              new situations. Experienced in designing and creating robust
-              mobile/web apps, optimising RESTful APIs, and promoting Test
-              Driven Development Methodologies to enhance user experience and
-              solve challenges. These projects provided valuable industry
-              information and prepared me for future professional challenges. I
-              am a confident, direct, enthusiastic individual who prioritises
-              teamwork, collaboration, and delivering high-quality results.
+              As a software engineer, I thrive on
+              transforming complex ideas into well-crafted applications that
+              solve real-world problems. I specialize in designing and building
+              resilient mobile and web applications, fine-tuning RESTful APIs
+              for performance, and leveraging Test-Driven Development to create
+              reliable and maintainable systems. Each project I’ve worked on has
+              sharpened my ability to navigate intricate challenges while
+              staying focused on delivering exceptional value.
             </m.p>
             <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"
@@ -46,11 +46,14 @@ const AboutItems = () => {
               whileInView={aboutVariant.p2}
               viewport={{ once: true }}
             >
-              My approach involves a deep understanding of project requirements,
-              collaborating closely with cross-functional teams to make informed
-              decisions that ensure optimal functionality. Committed to
-              delivering the best and most user-friendly experiences, I am adept
-              at meeting project goals efficiently and on schedule.
+              I bring a hands-on, detail-oriented approach to every project,
+              ensuring that functionality aligns with user needs and technical
+              excellence. By actively collaborating with cross-disciplinary
+              teams, I make thoughtful decisions that prioritize usability,
+              efficiency, and long-term scalability. I’m passionate about
+              creating solutions that not only meet but exceed expectations, all
+              while fostering a collaborative environment that drives innovation
+              and shared success.
             </m.p>
           </div>
         </div>
