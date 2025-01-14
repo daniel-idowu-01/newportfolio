@@ -29,6 +29,14 @@
     ]
   },
   {
+    "name": "regex-validate",
+    "image": "images/projects/regex.png",
+    "link": "https://github.com/daniel-idowu-01/regex-validate",
+    "liveLink": "https://www.npmjs.com/package/regex-validate",
+    "about": "regex-validate - An npm library that comprises of major regex expressions, saving developers time.",
+    "builtWith": ["Typescript"]
+  },
+  {
     "name": "InventoryFlow",
     "image": "images/projects/inventoryflow.png",
     "link": "https://github.com/daniel-idowu-01/inventoryflow",
