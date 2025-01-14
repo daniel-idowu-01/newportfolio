@@ -1,5 +1,19 @@
 [
   {
+    "name": "GitDocs",
+    "image": "images/projects/gitdocs.png",
+    "link": "https://github.com/daniel-idowu-01/gitDocs",
+    "liveLink": "https://getgitdocs.netlify.app/",
+    "about": "GitDOcs - A tool that can be used to generate documentation and get insights on github projects.",
+    "builtWith": [
+      "react",
+      "expressjs",
+      "tailwindcss",
+      "gemini",
+      "shadcn"
+    ]
+  },
+  {
     "name": "InkQuill",
     "image": "images/projects/inkquill.png",
     "link": "https://github.com/daniel-idowu-01/inkquill",
@@ -23,21 +37,6 @@
     "builtWith": ["react", "expressjs", "mongodb", "tailwindcss", "rechart"]
   },
   {
-    "name": "iReadLib",
-    "image": "images/projects/ireadlib.png",
-    "link": "https://github.com/daniel-idowu-01/ireadlib",
-    "liveLink": "https://ireadlib.netlify.app/",
-    "about": "iReadLib - An e-library platform for buying and selling books.",
-    "builtWith": [
-      "react",
-      "expressjs",
-      "tailwindcss",
-      "framer-motion",
-      "mongodb",
-      "swiperjs"
-    ]
-  },
-  {
     "name": "AI-Doc",
     "image": "images/projects/aidoc.png",
     "link": "https://github.com/daniel-idowu-01/AI-Doc",
@@ -50,28 +49,5 @@
       "machine learning",
       "mongodb"
     ]
-  },
-  {
-    "name": "Exclusive",
-    "image": "images/projects/exclusive.png",
-    "link": "https://github.com/daniel-idowu-01/exclusive",
-    "liveLink": "https://exclusive-nu.vercel.app/",
-    "about": "Exclusive - Your universal e-commerce platform for every category of product.",
-    "builtWith": [
-      "react",
-      "tailwindcss",
-      "framer-motion",
-      "mongodb",
-      "flowbite",
-      "supabase"
-    ]
-  },
-  {
-    "name": "EliteTV",
-    "image": "images/projects/theelitetv.png",
-    "link": "https://github.com/daniel-idowu-01/eliteTV_UPDATED",
-    "liveLink": "https://theelitetv.netlify.app/",
-    "about": "EliteTV - A movie platform where users get information about movies",
-    "builtWith": ["react", "tailwindcss", "swiperjs", "supabase"]
   }
 ]
