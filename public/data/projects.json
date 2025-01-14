@@ -5,13 +5,7 @@
     "link": "https://github.com/daniel-idowu-01/gitDocs",
     "liveLink": "https://getgitdocs.netlify.app/",
     "about": "GitDOcs - A tool that can be used to generate documentation and get insights on github projects.",
-    "builtWith": [
-      "react",
-      "expressjs",
-      "tailwindcss",
-      "gemini",
-      "shadcn"
-    ]
+    "builtWith": ["react", "expressjs", "tailwindcss", "gemini", "shadcn"]
   },
   {
     "name": "InkQuill",
