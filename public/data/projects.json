@@ -42,7 +42,7 @@
     "name": "AI-Doc",
     "image": "images/projects/aidoc.png",
     "link": "https://github.com/daniel-idowu-01/AI-Doc",
-    "liveLink": "https://ai-doc.netlify.app/home",
+    "liveLink": "https://ai-doc.netlify.app/",
     "about": "AI Doc - An AI-powered symptom and diagnosis guidance web application that helps users manage their health.",
     "builtWith": [
       "react",
