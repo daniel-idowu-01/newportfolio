@@ -18,6 +18,8 @@ const Header = () => {
       : body?.classList.remove("no-scroll")
   }, [isOpen])
 
+   const resumeLink = "https://drive.google.com/file/d/1fSZyeugB-i0imr5G55lmBHr4fpe4xHSb/view?usp=sharing"
+
   return (
     <header className="flex items-center justify-center  w-full h-16 md:h-20 lg:h-[5rem] bg-body/80 -mb-[1px] fixed top-0 left-0 z-50 shadow-lg px-6 md:px-10 lg:px-14 backdrop-blur-md">
       <nav className="flex items-center justify-between w-full ">
@@ -47,7 +49,7 @@ const Header = () => {
               initial={{ y: -100 }}
               animate={{ y: 0, transition: { duration: 0.3, delay: 0.1 } }}
             >
-              <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
+              <Link href={resumeLink} target="_blank" rel="noreferrer">
                 <span className="mr-3 text-base font-normal tracking-wide text-white capitalize group:hover:mr-1">
                   resume
                 </span>
