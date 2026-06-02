@@ -9,16 +9,16 @@ const Technologies = () => {
   const CardItems: string[] = [
     "javascript",
     "typescript",
-    //"python",
+    "python",
     "nodejs",
     "express",
-    //"fastapi",
     "mongodb",
-    //"postgresql",
+    "postgresql",
     "firebase",
     "git",
     "github",
-    //"AWS",
+    "docker",
+    "AWS",
   ]
   return (
     <>
