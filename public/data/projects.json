@@ -25,9 +25,9 @@
   },
   {
     "name": "Visualab",
-    "image": "images/projects/regex.png",
+    "image": "images/projects/visualab.png",
     "link": "https://github.com/daniel-idowu-01/visualab",
-    "liveLink": "https://visualab-nu.vercel.app/",
+    "liveLink": "https://visualab-eta.vercel.app/",
     "about": "Visualab - A platform to generate stunning product ads, packshots, and lifestyle shots.",
     "builtWith": ["nextjs", "tailwindcss", "bria api", "mongodb", "cloudinary"]
   },
