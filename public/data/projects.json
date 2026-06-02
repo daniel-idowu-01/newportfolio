@@ -1,11 +1,43 @@
 [
   {
-    "name": "GitDocs",
-    "image": "images/projects/gitdocs.png",
-    "link": "https://github.com/daniel-idowu-01/gitDocs",
-    "liveLink": "https://getgitdocs.netlify.app/",
-    "about": "GitDOcs - A tool that can be used to generate documentation and get insights on github projects.",
-    "builtWith": ["react", "expressjs", "tailwindcss", "gemini", "shadcn"]
+    "name": "Vendra",
+    "image": "images/projects/vendra.png",
+    "link": "https://github.com/daniel-idowu-01/vendra",
+    "liveLink": "https://vendra-web-gamma.vercel.app/",
+    "about": "Vendra - A WhatsApp-first business operating system for African SMEs.",
+    "builtWith": ["nextjs", "nestjs", "whatsapp cloud api", "gemini", "huggingface", "docker", "postgresql", "tailwindcss"]
+  },
+  {
+    "name": "Research Paper Analyzer",
+    "image": "images/projects/research-paper-analyzer.jpg",
+    "link": "https://github.com/daniel-idowu-01/research-paper-analyzer",
+    "liveLink": "https://research-paper-analyzer-eta.vercel.app/",
+    "about": "Research Paper Analyzer - A tool that uses AI to analyze and summarize research papers.",
+    "builtWith": ["nextjs", "tailwindcss", "gemini", "mongodb", "cloudinary"]
+  },
+  {
+    "name": "Visualab",
+    "image": "images/projects/regex.png",
+    "link": "https://github.com/daniel-idowu-01/visualab",
+    "liveLink": "https://visualab-nu.vercel.app/",
+    "about": "Visualab - A platform to generate stunning product ads, packshots, and lifestyle shots.",
+    "builtWith": ["nextjs", "tailwindcss", "bria api", "mongodb", "cloudinary"]
+  },
+  {
+    "name": "Orbit",
+    "image": "images/projects/regex.png",
+    "link": "https://github.com/daniel-idowu-01/orbit-frontend",
+    "liveLink": "https://orbit-colab.vercel.app/",
+    "about": "Orbit - A task collaboration platform for small teams.",
+    "builtWith": ["nextjs", "tailwindcss", "nestjs", "mongodb"]
+  },
+  {
+    "name": "Exclusive",
+    "image": "images/projects/exclusive.png",
+    "link": "https://github.com/daniel-idowu-01/exclusive",
+    "liveLink": "https://exclusive-nu.vercel.app/",
+    "about": "Exclusive - An e-commerce platform for exclusive product launches.",
+    "builtWith": ["nextjs", "tailwindcss", "nestjs", "postgresql"]
   },
   {
     "name": "InkQuill",
@@ -13,43 +45,30 @@
     "link": "https://github.com/daniel-idowu-01/inkquill",
     "liveLink": "https://inkquill.vercel.app/",
     "about": "InkQuill - A tool that uses AI to summarize PDFs and paraphrase texts.",
-    "builtWith": [
-      "nextjs",
-      "expressjs",
-      "tailwindcss",
-      "cohere-ai",
-      "ocr.space",
-      "shadcn"
-    ]
+    "builtWith": ["nextjs", "expressjs", "tailwindcss", "cohere-ai", "ocr.space", "shadcn"]
   },
   {
-    "name": "regex-validate",
+    "name": "AI Assistant Backend",
     "image": "images/projects/regex.png",
-    "link": "https://github.com/daniel-idowu-01/regex-validate",
-    "liveLink": "https://www.npmjs.com/package/regex-validate",
-    "about": "regex-validate - An npm library that comprises of major regex expressions, saving developers time.",
-    "builtWith": ["Typescript"]
+    "link": "https://github.com/daniel-idowu-01/ai-assistant-backend",
+    "liveLink": "https://github.com/daniel-idowu-01/ai-assistant-backend",
+    "about": "AI Assistant Backend - The backend system of an AI assistant to perform google service operations.",
+    "builtWith": ["expressjs", "googleapis", "node-cron", "mongodb"]
   },
   {
-    "name": "InventoryFlow",
+    "name": "NutritionBot",
     "image": "images/projects/inventoryflow.png",
-    "link": "https://github.com/daniel-idowu-01/inventoryflow",
-    "liveLink": "https://inventoryflow.netlify.app/",
-    "about": "InventoryFlow - An inventory management system for small businesses.",
-    "builtWith": ["react", "expressjs", "mongodb", "tailwindcss", "rechart"]
+    "link": "https://github.com/daniel-idowu-01/nutrition-bot",
+    "liveLink": "https://github.com/daniel-idowu-01/nutrition-bot",
+    "about": "NutritionBot - A whatsappbot that provides personalized nutrition advice based on user health history.",
+    "builtWith": ["nestjs", "mongodb", "whatsapp cloud api", "gemini"]
   },
   {
-    "name": "AI-Doc",
-    "image": "images/projects/aidoc.png",
-    "link": "https://github.com/daniel-idowu-01/AI-Doc",
-    "liveLink": "https://ai-doc.netlify.app/",
-    "about": "AI Doc - An AI-powered symptom and diagnosis guidance web application that helps users manage their health.",
-    "builtWith": [
-      "react",
-      "expressjs",
-      "tailwindcss",
-      "machine learning",
-      "mongodb"
-    ]
+    "name": "DexterDB",
+    "image": "images/projects/dexterdb.png",
+    "link": "https://github.com/daniel-idowu-01/dexterdb",
+    "liveLink": "https://www.npmjs.com/package/dexterdb",
+    "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
+    "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
   }
 ]
