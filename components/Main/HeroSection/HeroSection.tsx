@@ -63,9 +63,9 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            As a<span className="text-cyan"> Backend Developer,</span> I
+            As a<span className="text-cyan"> Fullstack Developer,</span> I
             specialize in designing, developing, and maintaining secure,
-            scalable, and efficient backend systems. I leverage{" "}
+            scalable, and efficient systems. I leverage{" "}
             <Text text="modern technologies " /> and best practices to build
             robust solutions that power{" "}
             <Text text="high-performance applications " />. My primary goal is
