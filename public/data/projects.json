@@ -16,6 +16,14 @@
     "builtWith": ["nextjs", "tailwindcss", "gemini", "mongodb", "cloudinary"]
   },
   {
+    "name": "DexterDB",
+    "image": "images/projects/dexterdb.png",
+    "link": "https://github.com/daniel-idowu-01/dexterdb",
+    "liveLink": "https://www.npmjs.com/package/dexterdb",
+    "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
+    "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
+  },
+  {
     "name": "Visualab",
     "image": "images/projects/regex.png",
     "link": "https://github.com/daniel-idowu-01/visualab",
@@ -62,13 +70,5 @@
     "liveLink": "https://github.com/daniel-idowu-01/nutrition-bot",
     "about": "NutritionBot - A whatsappbot that provides personalized nutrition advice based on user health history.",
     "builtWith": ["nestjs", "mongodb", "whatsapp cloud api", "gemini"]
-  },
-  {
-    "name": "DexterDB",
-    "image": "images/projects/dexterdb.png",
-    "link": "https://github.com/daniel-idowu-01/dexterdb",
-    "liveLink": "https://www.npmjs.com/package/dexterdb",
-    "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
-    "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
   }
 ]
