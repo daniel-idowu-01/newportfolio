@@ -33,7 +33,7 @@
   },
   {
     "name": "Orbit",
-    "image": "images/projects/regex.png",
+    "image": "images/projects/orbit.png",
     "link": "https://github.com/daniel-idowu-01/orbit-frontend",
     "liveLink": "https://orbit-colab.vercel.app/",
     "about": "Orbit - A task collaboration platform for small teams.",
@@ -57,7 +57,7 @@
   },
   {
     "name": "AI Assistant Backend",
-    "image": "images/projects/regex.png",
+    "image": "images/projects/null.png",
     "link": "https://github.com/daniel-idowu-01/ai-assistant-backend",
     "liveLink": "https://github.com/daniel-idowu-01/ai-assistant-backend",
     "about": "AI Assistant Backend - The backend system of an AI assistant to perform google service operations.",
@@ -65,7 +65,7 @@
   },
   {
     "name": "NutritionBot",
-    "image": "images/projects/inventoryflow.png",
+    "image": "images/projects/null.png",
     "link": "https://github.com/daniel-idowu-01/nutrition-bot",
     "liveLink": "https://github.com/daniel-idowu-01/nutrition-bot",
     "about": "NutritionBot - A whatsappbot that provides personalized nutrition advice based on user health history.",
