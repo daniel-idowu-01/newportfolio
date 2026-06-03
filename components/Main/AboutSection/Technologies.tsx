@@ -18,7 +18,7 @@ const Technologies = () => {
     "git",
     "github",
     "docker",
-    "AWS",
+    "aws",
   ]
   return (
     <>
