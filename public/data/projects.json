@@ -8,6 +8,22 @@
     "builtWith": ["nextjs", "nestjs", "whatsapp cloud api", "gemini", "huggingface", "docker", "postgresql", "tailwindcss"]
   },
   {
+    "name": "LendStack",
+    "image": "images/projects/lendstack.png",
+    "link": "https://github.com/daniel-idowu-01/lendstack",
+    "liveLink": "https://lendstack-ng.vercel.app/",
+    "about": "LendStack - Full-stack LMS for individual personal loans with CBN-aware compliance.",
+    "builtWith": ["nextjs", "java", "docker", "postgresql", "paystack api"]
+  },
+  {
+    "name": "Ekuke Chase",
+    "image": "images/projects/ekuke-chase.png",
+    "link": "https://github.com/daniel-idowu-01/ekuke-chase",
+    "liveLink": "https://ekuke-chase.vercel.app/",
+    "about": "Ekuke Chase - A small, polished third-person combat game.",
+    "builtWith": ["typescript", "threejs", "rapier"]
+  },
+  {
     "name": "Research Paper Analyzer",
     "image": "images/projects/research-paper-analyzer.jpg",
     "link": "https://github.com/daniel-idowu-01/research-paper-analyzer",
