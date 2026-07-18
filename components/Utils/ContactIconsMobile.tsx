@@ -1,28 +1,53 @@
 import { m } from "framer-motion"
 import Link from "next/link"
+import IconLinks from "./IconLinks"
+import Github from "./icons/Github"
+import LinkedIn from "./icons/LinkedIn"
+import Twitter from "./icons/Twitter"
 
 const ContactIconsMobile = () => {
   return (
     <m.div
-      className="fixed bottom-0 left-0 z-30 flex items-center justify-between w-full px-6 py-4 md:hidden bg-ink/85 backdrop-blur-md border-t border-line"
+      className="fixed bottom-0 left-0 z-30 flex items-center justify-between w-full h-6 px-6 py-5 md:hidden bg-gray/30"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.6, delay: 1 },
+        transition: { duration: 0.3, delay: 1 },
       }}
     >
-      <Link
-        href={`tel:07449816627`}
-        className="font-mono text-xs tracking-wide duration-300 text-dim hover:text-amber"
-      >
-        07449 816 627
-      </Link>
-      <Link
-        href={`mailto:davididowu172@gmail.com`}
-        className="font-mono text-xs tracking-wide duration-300 text-dim hover:text-amber"
-      >
-        davididowu172@gmail.com
-      </Link>
+      {/* left */}
+      <div className="left-0 right-auto flex items-center justify-center border-cyan">
+        <ul className="flex space-x-6 list-none lg:flex-col">
+          <li className="w-5 h-5">
+            <IconLinks link="https://github.com/daniel-idowu-01" name="Github">
+              <Github />
+            </IconLinks>
+          </li>
+          <li className="w-5 h-5">
+            <IconLinks link="https://www.linkedin.com/in/daniel-idowu/" name="Linkedin">
+              <LinkedIn />
+            </IconLinks>
+          </li>
+          {/* <li className="w-5 h-5">
+            <IconLinks link="https://twitter.com/konathegod" name="Twitter">
+              <Twitter />
+            </IconLinks>
+          </li> */}
+        </ul>
+      </div>
+      {/* right */}
+      <div className="left-auto flex items-center justify-center border-cyan">
+        <div className="list-none">
+          <div className="md:rotate-90">
+            <Link
+              href={`mailto:danielidowu414@gmail.com`}
+              className="text-sm font-semibold duration-200 text-text hover:text-cyan font-pop "
+            >
+              danielidowu414@gmail.com
+            </Link>
+          </div>
+        </div>
+      </div>
     </m.div>
   )
 }

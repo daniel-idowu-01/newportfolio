@@ -1,89 +1,105 @@
-import { m } from "framer-motion"
+import { m } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { projectVariant } from "../../../variants/projectVariant";
+import Github from "../../Utils/icons/Github";
+import LiveLink from "./icon/LiveLink";
 
 export type ProjectCardprops = {
-  name: string
-  category: string
-  about: string
-  stat: string
-  statLabel: string
-  tools: string[]
-  orientation: number
-  index: number
-}
+  image: string;
+  name: string;
+  link: string;
+  liveLink: string;
+  about: string;
+  builtWith: string[];
+  orientation: number;
+};
 
 const ProjectsCard = ({
-  name,
-  category,
   about,
-  stat,
-  statLabel,
-  tools,
+  image,
+  name,
+  link,
+  liveLink,
+  builtWith,
   orientation,
-  index,
 }: ProjectCardprops) => {
-  const flipped = orientation === 1
   return (
-    <m.article
-      className="w-full"
-      initial={{ opacity: 0, y: 32 }}
-      whileInView={{
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] },
-      }}
-      viewport={{ once: true, margin: "-80px" }}
+    <m.div
+      className="w-full rounded-lg shadow-2xl lg:shadow-none"
+      initial={{ opacity: 0, y: 25 }}
+      variants={projectVariant}
+      whileInView={projectVariant.image}
+      viewport={{ once: true }}
     >
-      {/* entry header */}
-      <div className="flex items-baseline mb-3 gap-4">
-        <span className="font-mono text-sm text-amber">
-          {String(index + 1).padStart(2, "0")}
-        </span>
-        <h2 className="font-serif text-3xl text-bone md:text-4xl">{name}</h2>
-        <span className="flex-1 h-px translate-y-[-0.35rem] bg-line" />
-      </div>
-      <p className="mb-8 label">{category}</p>
-
-      <div
-        className={`flex flex-col gap-8 lg:gap-12 lg:items-stretch ${
-          flipped ? "lg:flex-row-reverse" : "lg:flex-row"
-        }`}
-      >
-        {/* headline stat — stands in for a screenshot */}
-        <div className="lg:flex-[42%] w-full">
-          <div className="relative flex flex-col justify-center h-full min-h-[14rem] px-8 py-10 border border-line bg-surface/60">
-            <span className="absolute top-0 left-0 w-4 h-4 border-t border-l border-amber" />
-            <span className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-amber" />
-            <p className="mb-4 font-serif text-5xl text-amber md:text-6xl leading-none">
-              {stat}
-            </p>
-            <p className="text-sm font-light leading-relaxed text-dim">
-              {statLabel}
-            </p>
-          </div>
+      <div className="max-w-5xl relative h-[33rem] sm:h-[30rem] lg:h-[22rem] xl:h-[28rem] flex flex-col overflow-hidden ">
+        {/* image */}
+        <div
+          className={`absolute inset-0 w-[20rem] h-[33rem] sm:h-[30rem] lg:top-1/2 lg:-translate-y-1/2 flex lg:items-start flex-col`}
+        >
+          <span
+            className={`min-w-[20rem] w-[37rem] md:w-[50rem] lg:w-[42rem] h-[33rem] sm:h-[30rem] lg:h-[22rem] xl:h-[28rem] absolute  rounded-xl duration-300 cursor-pointer opacity-10 lg:opacity-25 hover:opacity-50 ${
+              orientation === 1 ? "lg:left-0" : "lg:left-full"
+            }`}
+          >
+            <Image
+              className=" object-contain"
+              src={`/${image}`}
+              alt={`${name} image`}
+              fill
+              priority
+            />
+          </span>
         </div>
 
         {/* text */}
-        <div className="lg:flex-[58%] flex flex-col justify-center">
-          <p className="mb-6 text-sm font-light leading-relaxed text-dim md:text-base">
+        <div
+          className={`${
+            orientation === 1
+              ? "absolute top-1/2 right-0 -translate-y-1/2 max-w-xl px-6 py-8 lg:p-0 flex lg:items-end flex-col w-full"
+              : "absolute top-1/2 left-0 -translate-y-1/2 max-w-xl px-6 py-8 lg:p-0 flex lg:items-start flex-col w-full"
+          }`}
+        >
+          <span className="mb-4 text-xl font-bold tracking-wider text-white capitalize cursor-pointer select-none lg:text-2xl">
+            {name}
+          </span>
+          <div className="py-5 mb-4 text-base font-normal text-white duration-300 rounded-lg shadow-xl md:bg-gray/90 lg:text-lg md:p-6 lg:px-7 lg:py-7 hover:shadow-2xl hover:-translate-y-1">
             {about}
-          </p>
-
-          <ul className="flex flex-wrap gap-x-2 gap-y-2 font-mono text-xs text-amber/90">
-            {tools.map((item, i) => (
-              <li key={item} className="lowercase">
+          </div>
+          <div className="flex flex-wrap items-center justify-center space-x-4 md:justify-start">
+            {builtWith.map((item, index) => (
+              <span
+                key={index}
+                className="text-sm font-semibold capitalize rounded-md select-none text-cyan lg:text-base"
+              >
                 {item}
-                {i < tools.length - 1 && (
-                  <span className="ml-2 text-line" aria-hidden>
-                    /
-                  </span>
-                )}
-              </li>
+              </span>
             ))}
-          </ul>
+          </div>
+          <div className="flex items-center pt-5 pb-2 mt-5 space-x-4">
+            <Link
+              href={`${link}`}
+              target="_blank"
+              aria-label={`${name} github link`}
+            >
+              <>
+                <Github />
+              </>
+            </Link>
+            <Link
+              href={`${liveLink}`}
+              target="_blank"
+              aria-label={`${name} live link`}
+            >
+              <>
+                <LiveLink />
+              </>
+            </Link>
+          </div>
         </div>
       </div>
-    </m.article>
-  )
-}
+    </m.div>
+  );
+};
 
-export default ProjectsCard
+export default ProjectsCard;

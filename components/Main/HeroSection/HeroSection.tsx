@@ -1,94 +1,109 @@
-import Text from "../../Text/Text"
-import HeroNav from "./HeroNav"
-import HireMeButton from "./HireMeButton"
-import ResumeButton from "./ResumeButton"
-import { m } from "framer-motion"
-
-const ease = [0.16, 1, 0.3, 1] as const
-
-const reveal = (delay: number) => ({
-  initial: { y: 24, opacity: 0 },
-  animate: {
-    y: 0,
-    opacity: 1,
-    transition: { duration: 0.7, delay, ease },
-  },
-})
+import Text from "../../Text/Text";
+import { AboutIcon } from "../icons";
+import HeroNav from "./HeroNav";
+import HireMeButton from "./HireMeButton";
+import ResumeButton from "./ResumeButton";
+import { m } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <div className="flex flex-col w-full">
+      {/* text */}
       <div className="relative w-full mx-auto">
-        {/* status line */}
-        <m.div
-          className="flex flex-wrap items-center mb-8 gap-x-5 gap-y-2"
-          {...reveal(0.15)}
-        >
-          <span className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-moss animate-pulse-dot" />
-            <span className="label !text-moss">
-              MSc Data Analytics — in progress
-            </span>
-          </span>
-          <span className="label">
-            &#47;&#47; Data Analyst — Manchester, UK
-          </span>
-        </m.div>
-
         {/* name */}
-        <m.h1
-          className="font-serif text-bone text-6xl sm:text-7xl md:text-[6.5rem] leading-[0.95] mb-6"
-          {...reveal(0.25)}
-        >
-          David
-          <br />
-          <span className="italic text-amber">Idowu.</span>
-        </m.h1>
-
-        {/* tagline */}
-        <m.p
-          className="mb-8 font-serif text-3xl sm:text-4xl md:text-5xl text-dim"
-          {...reveal(0.35)}
-        >
-          I turn data into decisions
-          <span
-            className="inline-block w-[0.5em] h-[0.9em] ml-2 align-baseline translate-y-[0.12em] bg-amber animate-blink"
-            aria-hidden
-          />
-        </m.p>
-
-        {/* brief about */}
-        <div className="max-w-[40.75rem]">
+        <div className="w-full font-bold text-cyan font-pop">
           <m.p
-            className="font-mono text-sm font-light md:text-base leading-relaxed text-dim"
-            {...reveal(0.45)}
+            className="mb-4 text-lg font-pop md:text-xl md:mb-6"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.3, delay: 0.55 },
+            }}
           >
-            I design and build robust <Text text="data pipelines" />, analyse
-            complex datasets using <Text text="Python" /> and{" "}
-            <Text text="SQL" />, and create compelling visualisations in{" "}
-            <Text text="Tableau" /> and <Text text="Excel" /> to drive informed
-            decision-making and solve business challenges — with a confident,
-            direct approach that prioritises teamwork, collaboration, and
-            high-quality results.
+            Hi there, 👋I&apos;m
+          </m.p>
+          <m.h1
+            className="flex items-center space-x-5 pb-7 font-pop text-text text-3xl sm:text-4xl md:text-[5rem] md:leading-[1.3]"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.3, delay: 0.6 },
+            }}
+          >
+            <span className=" w-fit">Idowu</span>
+            <span className="relative text-cyan before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 md:before:h-2 md:before:-bottom-3 before:block before:bg-cyan before:rounded-full">
+              Daniel.
+            </span>
+          </m.h1>
+        </div>
+        {/* brief about */}
+        <div className="w-full mb-6 ">
+          <m.p
+            className="text-text_Light text-3xl sm:text-4xl md:text-6xl font-semibold md:leading-[1.3]"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.3, delay: 0.7 },
+            }}
+          >
+            I build things for the web.
           </m.p>
         </div>
-
+        {/* brief about info */}
+        <div className="max-w-[40.75rem]">
+          <m.p
+            className="text-text_Light text-base md:text-xl md:leading-[1.3] "
+            initial={{ y: 20, opacity: 0 }}
+            animate={{
+              y: 0,
+              opacity: 1,
+              transition: { duration: 0.3, delay: 0.8 },
+            }}
+          >
+            As a<span className="text-cyan"> Fullstack Developer,</span> I
+            specialize in designing, developing, and maintaining secure,
+            scalable, and efficient systems. I leverage{" "}
+            <Text text="modern technologies " /> and best practices to build
+            robust solutions that power{" "}
+            <Text text="high-performance applications " />. My primary goal is
+            to deliver optimized, long-term systems that not only meet but often
+            exceed both the technical requirements of the company and the
+            expectations of clients.
+          </m.p>
+        </div>
         {/* buttons */}
         <m.div
-          className="flex flex-wrap items-center w-full mb-10 gap-5 md:gap-7 mt-11 md:mt-14"
-          {...reveal(0.55)}
+          className="flex items-center w-full mb-10 space-x-5 md:space-x-7 mt-11 md:mt-14"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.3, delay: 0.9 },
+          }}
         >
           <HireMeButton />
           <ResumeButton />
         </m.div>
-
-        {/* secondary nav */}
-        <m.div className="flex items-center" {...reveal(0.65)}>
-          <HeroNav name="learn about me" />
+        {/* btn2 */}
+        <m.div
+          className="flex items-center space-x-3"
+          initial={{ y: 20, opacity: 0 }}
+          animate={{
+            y: 0,
+            opacity: 1,
+            transition: { duration: 0.3, delay: 0.9 },
+          }}
+        >
+          <HeroNav name="learn about me">
+            <AboutIcon height="4" width="4" />
+          </HeroNav>
         </m.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

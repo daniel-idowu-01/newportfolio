@@ -1,93 +1,86 @@
+import Image from "next/image"
 import Link from "next/link"
 import { m } from "framer-motion"
+import { menuVariant, navItem } from "../../variants/menuVariant"
+import { Download } from "../Main/icons"
 
 type Props = {
   handleMenuToggle: () => void
 }
 
-const resumeLink = "/docs/resume.pdf"
-
 const Mobile = ({ handleMenuToggle }: Props) => {
   const linkArray = ["home", "about", "projects", "contact me"]
   return (
     <m.div
-      className="fixed top-0 right-0 z-50 w-4/5 h-screen overflow-hidden border-l md:hidden bg-veryDark/95 backdrop-blur-md border-line"
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
-      exit={{ x: "100%" }}
-      transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+      className="absolute top-0 right-0 z-50 w-3/4 h-screen overflow-hidden md:hidden bg-veryDark"
+      initial={{ opacity: 0 }}
+      variants={menuVariant}
+      whileInView={"show"}
+      exit={"exit"}
     >
-      <div className="relative flex flex-col justify-center w-full h-full px-8">
-        {/* close */}
-        <button
-          className="absolute p-2 right-5 top-5 text-dim hover:text-amber"
-          onClick={handleMenuToggle}
-          aria-label="close mobile menu"
-        >
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-          >
-            <path d="M3 3l14 14M17 3L3 17" />
-          </svg>
-        </button>
-
-        <p className="mb-8 label">Menu</p>
+      <div className="w-full px-6 md:px-10">
+        <div className="absolute right-6 top-6 ">
+          {/* hamburger */}
+          <div className="lg:hidden" onClick={handleMenuToggle}>
+            <Image
+              src={"/icons/close.svg"}
+              alt="Open Menu Icon"
+              aria-label="open mobile menu"
+              width={20}
+              height={25}
+            />
+          </div>
+        </div>
 
         {/* links */}
-        <nav className="flex flex-col space-y-6">
+        <m.div
+          className="flex flex-col items-center justify-center h-screen space-y-7"
+          initial={{ opacity: 0 }}
+          whileInView={navItem.show}
+          exit={navItem.exit}
+        >
           {linkArray.map((item, index) => (
-            <m.div
-              key={item}
-              initial={{ opacity: 0, x: 30 }}
-              animate={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 0.4,
-                  delay: 0.1 + index * 0.07,
-                  ease: [0.16, 1, 0.3, 1],
-                },
-              }}
+            <LinkWrapper
+              key={index}
+              name={item}
+              handleMenuToggle={handleMenuToggle}
+            />
+          ))}
+
+          <div className="flex justify-center mt-10">
+            <button
+              className={`flex items-center justify-center rounded-md px-5 h-11 bg-buttonBg  hover:bg-cyan duration-300 group cursor-pointer`}
             >
-              <Link
-                href={
-                  item === "home"
-                    ? "/"
-                    : `/${item.toLowerCase().replace(" ", "")}`
-                }
-                className="flex items-baseline gap-3 duration-300 w-fit group"
-                onClick={handleMenuToggle}
-              >
-                <span className="font-mono text-xs text-amber">
-                  {String(index).padStart(2, "0")}
-                </span>
-                <span className="font-serif text-4xl capitalize text-bone group-hover:text-amber group-hover:italic">
-                  {item}
+              <Link href={`/docs/resume.pdf`} target="_blank" rel="noreferrer">
+                <span className="mr-3 text-base font-semibold text-white capitalize group:hover:mr-1">
+                  resume
                 </span>
               </Link>
-            </m.div>
-          ))}
-        </nav>
-
-        <div className="w-full h-px mt-10 mb-8 bg-line" />
-
-        <Link
-          href={resumeLink}
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center justify-between px-5 font-mono text-sm border w-fit gap-6 h-11 border-line text-dim hover:text-amber hover:border-amber duration-300"
-        >
-          <span className="uppercase tracking-label">Resume</span>
-          <span aria-hidden>&#8599;</span>
-        </Link>
+              <Download height="4" width="4" />
+            </button>
+          </div>
+        </m.div>
       </div>
+      Mobile
     </m.div>
   )
 }
 
 export default Mobile
+
+type linkProp = {
+  name: string
+  handleMenuToggle: () => void
+}
+
+const LinkWrapper = ({ name, handleMenuToggle }: linkProp) => {
+  return (
+    <Link
+      href={`${name == "home" ? "/" : name.toLowerCase().replace(" ", "")}`}
+      className="flex items-center space-x-4 text-lg capitalize duration-300 hover:text-cyan text-text w-fit"
+      onClick={handleMenuToggle}
+    >
+      {name}
+    </Link>
+  )
+}

@@ -9,24 +9,25 @@ const HeadSection = ({ title, page }: Props) => {
   return (
     <Head>
       <title>{title}</title>
-      <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="theme-color" content="#12100b" />
       <meta
-        name="description"
-        content={`${page} — David Idowu, Data Analyst based in Manchester, UK. Data pipelines, Python, SQL, Tableau, Power BI and Excel.`}
+        http-equihttpequiv="Content-Type"
+        content="text/html;charset=UTF-8"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content={`${page} Page of My Portfolio`} />
       <meta
         name="keywords"
-        content={`David Idowu, Data Analyst, Python, SQL, Tableau, Power BI, Excel, Azure, Manchester, ${page}`}
+        content={`Idowu Daniel, Nextjs, Nestjs, Expressjs, Python, Frontend, Backend, ${page}`}
       />
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content={"David Idowu"} />
+      <meta property="og:site_name" content={""} />
+      <meta property="og:url" content="https://danielidowu.netlify.app" />
       <meta
         property="og:description"
-        content={`${page} — David Idowu, Data Analyst based in Manchester, UK.`}
+        content={`${page} Page of My Portfolio`}
       />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="portfolio" />
+      <meta property="og:image" content="" />
       <link rel="icon" href="/icons/logo.svg" />
     </Head>
   )
