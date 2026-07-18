@@ -1,9 +1,5 @@
 import { m } from "framer-motion"
 import Link from "next/link"
-import IconLinks from "./IconLinks"
-import Github from "./icons/Github"
-import LinkedIn from "./icons/LinkedIn"
-import Twitter from "./icons/Twitter"
 
 const ContactIcons = () => {
   return (
@@ -12,47 +8,31 @@ const ContactIcons = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 0.3, delay: 1 },
+        transition: { duration: 0.6, delay: 1 },
       }}
     >
-      {/* left */}
-      <div className="fixed bottom-0 right-auto z-30 flex items-center justify-center w-10 px-0 py-0 border-cyan lg:left-3 left-10">
-        <ul className="flex lg:flex-col space-x-6 lg:space-x-0 lg:space-y-6 list-none  after:hidden lg:after:block after:h-24 after:w-[2px] after:mx-auto after:bg-white after:mt-4  ">
-          <m.li
-            className="w-5 h-5"
-            whileHover={{ y: -5, transition: { duration: 0.3 } }}
-          >
-            <IconLinks link="https://github.com/daniel-idowu-01" name="Github">
-              <Github />
-            </IconLinks>
-          </m.li>
-          <m.li
-            className="w-5 h-5"
-            whileHover={{ y: -5, transition: { duration: 0.3 } }}
-          >
-            <IconLinks link="https://www.linkedin.com/in/daniel-idowu/" name="Linkedin">
-              <LinkedIn />
-            </IconLinks>
-          </m.li>
-          {/* <m.li
-            className="w-5 h-5"
-            whileHover={{ y: -5, transition: { duration: 0.3 } }}
-          >
-            <IconLinks link="https://twitter.com/konathegod" name="Twitter">
-              <Twitter />
-            </IconLinks>
-          </m.li> */}
-        </ul>
-      </div>
-      {/* right */}
-      <div className="fixed bottom-0 right-0 left-auto z-30 flex items-center justify-center w-10 px-0 py-0 border-cyan lg:right-3 xl:right-10">
-        <div className="list-none after:block after:h-24 after:w-[2px] after:mx-auto after:bg-white after:mt-20 ">
-          <div className="md:rotate-90">
+      {/* left rail — phone */}
+      <div className="fixed bottom-0 right-auto z-30 flex items-center justify-center w-10 lg:left-3 left-10">
+        <div className="after:block after:h-24 after:w-px after:mx-auto after:bg-line after:mt-20">
+          <div className="rotate-90">
             <Link
-              href={`mailto:danielidowu414@gmail.com`}
-              className="text-sm font-semibold duration-200 text-text hover:text-cyan font-pop "
+              href={`tel:07449816627`}
+              className="font-mono text-xs tracking-widest duration-300 whitespace-nowrap text-dim hover:text-amber"
             >
-              danielidowu414@gmail.com
+              07449 816 627
+            </Link>
+          </div>
+        </div>
+      </div>
+      {/* right rail — email */}
+      <div className="fixed bottom-0 right-0 left-auto z-30 flex items-center justify-center w-10 lg:right-3 xl:right-10">
+        <div className="after:block after:h-24 after:w-px after:mx-auto after:bg-line after:mt-20">
+          <div className="rotate-90">
+            <Link
+              href={`mailto:davididowu172@gmail.com`}
+              className="font-mono text-xs tracking-widest duration-300 whitespace-nowrap text-dim hover:text-amber"
+            >
+              davididowu172@gmail.com
             </Link>
           </div>
         </div>

@@ -2,44 +2,35 @@ import "../styles/globals.css"
 import type { AppProps } from "next/app"
 import { ContactIcons, ContactIconsMobile, Header } from "../components"
 import { LazyMotion, domAnimation } from "framer-motion"
-import { useMediaQuery } from "../hooks/useMediaQuery"
-import { Raleway } from "next/font/google"
-import { useEffect, useState } from "react"
+import { Instrument_Serif, Spline_Sans_Mono } from "next/font/google"
 
-const poppins = Raleway({
+const serif = Instrument_Serif({
   subsets: ["latin"],
-  variable: "--font-poppins",
-  weight: ["400", "500", "600", "700"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-serif",
+  display: "swap",
+  fallback: ["Georgia", "serif"],
+  adjustFontFallback: false,
+})
+
+const mono = Spline_Sans_Mono({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-mono",
+  display: "swap",
 })
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const matches = useMediaQuery("(max-width: 768px)")
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return null
-  }
-
   return (
-    <>
-      <style jsx global>
-        {`
-          :root {
-            --font-poppins: ${poppins.style.fontFamily};
-          }
-        `}
-      </style>
-
-      <LazyMotion features={domAnimation}>
+    <div className={`${serif.variable} ${mono.variable} font-mono`}>
+      <LazyMotion features={domAnimation} strict>
         <Header />
         <Component {...pageProps} />
-        {matches ? <ContactIconsMobile /> : <ContactIcons />}
+        <ContactIconsMobile />
+        <ContactIcons />
       </LazyMotion>
-    </>
+    </div>
   )
 }
 

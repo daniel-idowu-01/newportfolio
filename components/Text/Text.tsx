@@ -5,9 +5,7 @@ type Props = {
 }
 
 const Text = ({ text }: Props) => {
-  return (
-    <span className="text-cyan font-bold font-pop inline-block">{text}</span>
-  )
+  return <span className="inline-block font-medium text-amber">{text}</span>
 }
 
 export default Text
