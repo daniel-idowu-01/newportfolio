@@ -1,90 +1,22 @@
 [
   {
-    "name": "Vendra",
-    "image": "images/projects/vendra.png",
-    "link": "https://github.com/daniel-idowu-01/vendra",
-    "liveLink": "https://vendra-web-gamma.vercel.app/",
-    "about": "Vendra - A WhatsApp-first business operating system for African SMEs.",
-    "builtWith": ["nextjs", "nestjs", "whatsapp cloud api", "gemini", "huggingface", "docker", "postgresql", "tailwindcss"]
+    "name": "Starbucks",
+    "about": "A consultancy report examining Starbucks' operational and financial challenges amid its \"Back to Starbucks\" turnaround strategy. Applied the Turnaround Strategy Lifecycle and the Cost-Quality Tradeoff Framework to diagnose a sharp decline in North American operating margins from 18.7% to 4.5% year-on-year, and delivered seven evidence-based recommendations to restore profitability while sustaining service quality.",
+    "builtWith": ["secondary data analysis", "stakeholder analysis", "turnaround strategy", "consultancy reporting"]
   },
   {
-    "name": "LendStack",
-    "image": "images/projects/lendstack.png",
-    "link": "https://github.com/daniel-idowu-01/lendstack",
-    "liveLink": "https://lendstack-ng.vercel.app/",
-    "about": "LendStack - Full-stack LMS for individual personal loans with CBN-aware compliance.",
-    "builtWith": ["nextjs", "java", "docker", "postgresql", "paystack api"]
+    "name": "AgriPulse CropFusion",
+    "about": "A technical consultancy report designing a cloud-based big data architecture for a global agricultural IoT platform serving 15 million farmers. Compared AWS, Azure, and Google Cloud across scalability, real-time processing, cost, and compliance, and proposed a full Azure-based architecture from data ingestion through to business intelligence visualisation, with a structured risk assessment covering security, cost escalation, data integrity, and vendor lock-in.",
+    "builtWith": ["azure iot hub", "data lake gen2", "event hubs", "stream analytics", "databricks", "power bi"]
   },
   {
-    "name": "Ekuke Chase",
-    "image": "images/projects/ekuke-chase.png",
-    "link": "https://github.com/daniel-idowu-01/ekuke-chase",
-    "liveLink": "https://ekuke-chase.vercel.app/",
-    "about": "Ekuke Chase - A small, polished third-person combat game.",
-    "builtWith": ["typescript", "threejs", "rapier"]
+    "name": "KRONIK Financial Services",
+    "about": "Designed and documented a Python-based data pipeline to automate loan application processing for a financial services firm experiencing 200% growth in application volumes. Addressed data quality challenges across PDF and Excel datasets using the CRISP-DM framework, performed EDA to surface key approval patterns, and recommended predictive modelling approaches including Logistic Regression, Random Forest, and XGBoost.",
+    "builtWith": ["python", "pandas", "numpy", "matplotlib", "seaborn", "scikit-learn", "google colab", "git"]
   },
   {
-    "name": "Research Paper Analyzer",
-    "image": "images/projects/research-paper-analyzer.jpg",
-    "link": "https://github.com/daniel-idowu-01/research-paper-analyzer",
-    "liveLink": "https://research-paper-analyzer-eta.vercel.app/",
-    "about": "Research Paper Analyzer - A tool that uses AI to analyze and summarize research papers.",
-    "builtWith": ["nextjs", "tailwindcss", "gemini", "mongodb", "cloudinary"]
-  },
-  {
-    "name": "DexterDB",
-    "image": "images/projects/dexterdb.png",
-    "link": "https://github.com/daniel-idowu-01/dexterdb",
-    "liveLink": "https://www.npmjs.com/package/dexterdb",
-    "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
-    "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
-  },
-  {
-    "name": "Visualab",
-    "image": "images/projects/visualab.png",
-    "link": "https://github.com/daniel-idowu-01/visualab",
-    "liveLink": "https://visualab-eta.vercel.app/",
-    "about": "Visualab - A platform to generate stunning product ads, packshots, and lifestyle shots.",
-    "builtWith": ["nextjs", "tailwindcss", "bria api", "mongodb", "cloudinary"]
-  },
-  {
-    "name": "Orbit",
-    "image": "images/projects/orbit.png",
-    "link": "https://github.com/daniel-idowu-01/orbit-frontend",
-    "liveLink": "https://orbit-colab.vercel.app/",
-    "about": "Orbit - A task collaboration platform for small teams.",
-    "builtWith": ["nextjs", "tailwindcss", "nestjs", "mongodb"]
-  },
-  {
-    "name": "Exclusive",
-    "image": "images/projects/exclusive.png",
-    "link": "https://github.com/daniel-idowu-01/exclusive",
-    "liveLink": "https://exclusive-nu.vercel.app/",
-    "about": "Exclusive - An e-commerce platform for exclusive product launches.",
-    "builtWith": ["nextjs", "tailwindcss", "nestjs", "postgresql"]
-  },
-  {
-    "name": "InkQuill",
-    "image": "images/projects/inkquill.png",
-    "link": "https://github.com/daniel-idowu-01/inkquill",
-    "liveLink": "https://inkquill.vercel.app/",
-    "about": "InkQuill - A tool that uses AI to summarize PDFs and paraphrase texts.",
-    "builtWith": ["nextjs", "expressjs", "tailwindcss", "cohere-ai", "ocr.space", "shadcn"]
-  },
-  {
-    "name": "AI Assistant Backend",
-    "image": "images/projects/null.png",
-    "link": "https://github.com/daniel-idowu-01/ai-assistant-backend",
-    "liveLink": "https://github.com/daniel-idowu-01/ai-assistant-backend",
-    "about": "AI Assistant Backend - The backend system of an AI assistant to perform google service operations.",
-    "builtWith": ["expressjs", "googleapis", "node-cron", "mongodb"]
-  },
-  {
-    "name": "NutritionBot",
-    "image": "images/projects/null.png",
-    "link": "https://github.com/daniel-idowu-01/nutrition-bot",
-    "liveLink": "https://github.com/daniel-idowu-01/nutrition-bot",
-    "about": "NutritionBot - A whatsappbot that provides personalized nutrition advice based on user health history.",
-    "builtWith": ["nestjs", "mongodb", "whatsapp cloud api", "gemini"]
+    "name": "Aphrodite Beauty Ltd.",
+    "about": "A full data analytics project for a beauty company operating across Austria, the Netherlands, and Portugal. Cleaned and prepared a multi-year sales dataset in Excel, performed exploratory and trend analysis across monthly revenue, product categories, and country-level benchmarks (2021-2023), and delivered strategic KPI recommendations to guide market expansion and product development decisions.",
+    "builtWith": ["excel", "data cleaning", "trend analysis", "data visualisation", "kpi design"]
   }
 ]

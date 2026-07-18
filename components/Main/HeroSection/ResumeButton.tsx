@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Download } from "../icons"
 
 const ResumeButton = () => {
-  const resumeLink = "https://drive.google.com/file/d/1fSZyeugB-i0imr5G55lmBHr4fpe4xHSb/view?usp=sharing"
+  const resumeLink = "/docs/resume.pdf"
   return (
     <button
       className={`flex items-center justify-center rounded-md px-5 w-fit h-11 bg-buttonBg  hover:bg-cyan_dark duration-300 group cursor-pointer`}

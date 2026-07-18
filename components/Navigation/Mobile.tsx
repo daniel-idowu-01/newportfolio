@@ -61,7 +61,6 @@ const Mobile = ({ handleMenuToggle }: Props) => {
           </div>
         </m.div>
       </div>
-      Mobile
     </m.div>
   )
 }

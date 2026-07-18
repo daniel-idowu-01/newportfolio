@@ -18,7 +18,7 @@ const AboutItems = () => {
           >
             <p>Hi{"👋, "} I&apos;m</p>
             <p className="relative font-semibold font-pop text-cyan w-fit">
-              Idowu Daniel,
+              David Idowu,
             </p>
           </m.h1>
           {/* info */}
@@ -30,14 +30,12 @@ const AboutItems = () => {
               whileInView={aboutVariant.p1}
               viewport={{ once: true }}
             >
-              As a software engineer, I thrive on
-              transforming complex ideas into well-crafted applications that
-              solve real-world problems. I specialize in designing and building
-              resilient mobile and web applications, fine-tuning RESTful APIs
-              for performance, and leveraging Test-Driven Development to create
-              reliable and maintainable systems. Each project I’ve worked on has
-              sharpened my ability to navigate intricate challenges while
-              staying focused on delivering exceptional value.
+              I am a determined professional who learns quickly and adapts to
+              new situations. I&apos;m experienced in designing and building
+              robust data pipelines, analysing complex datasets using Python
+              and SQL, and creating compelling visualisations in Tableau and
+              Excel to drive informed decision-making and solve business
+              challenges.
             </m.p>
             <m.p
               className="mb-6 text-lg font-normal text-text lg:text-xl"
@@ -46,14 +44,12 @@ const AboutItems = () => {
               whileInView={aboutVariant.p2}
               viewport={{ once: true }}
             >
-              I bring a hands-on, detail-oriented approach to every project,
-              ensuring that functionality aligns with user needs and technical
-              excellence. By actively collaborating with cross-disciplinary
-              teams, I make thoughtful decisions that prioritize usability,
-              efficiency, and long-term scalability. I’m passionate about
-              creating solutions that not only meet but exceed expectations, all
-              while fostering a collaborative environment that drives innovation
-              and shared success.
+              My projects have provided valuable industry insights and prepared
+              me for future professional challenges. I am a confident, direct,
+              enthusiastic individual who prioritises teamwork, collaboration,
+              and delivering high-quality results — currently completing an MSc
+              in Management with Data Analytics at BPP University in
+              Manchester, United Kingdom.
             </m.p>
           </div>
         </div>
@@ -69,13 +65,12 @@ const AboutItems = () => {
             <div className="relative w-full h-full duration-500 grayscale group-hover:grayscale-0">
               <Image
                 className="object-cover"
-                src={"/images/daniel.jpeg"}
-                alt="moi"
+                src={"/images/david.jpeg"}
+                alt="Portrait of David Idowu"
                 priority={true}
                 fill
-                quality={100}
                 placeholder={"blur"}
-                blurDataURL={"/images/daniel.jpeg"}
+                blurDataURL={"/images/david.jpeg"}
               />
             </div>
           </div>

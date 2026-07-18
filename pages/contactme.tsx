@@ -4,7 +4,7 @@ import { ContactForm, ContactItems, HeadSection } from "../components"
 const ContactMe: NextPage = () => {
   return (
     <>
-      <HeadSection page="Contact" title="Portfolio - Contact Page" />
+      <HeadSection page="Contact" title="David Idowu — Contact" />
       <main className="relative font-pop  min-h-screen w-full bg-body overflow-x-hidden py-16 ">
         <div className="max-w-4xl xl:max-w-[1000px] px-6 md:px-10 lg:px-0 mx-auto">
           <div className="flex items-center justify-center flex-col">

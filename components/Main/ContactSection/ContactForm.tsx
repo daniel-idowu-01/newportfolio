@@ -4,7 +4,7 @@ import { contactFormVariant } from "../../../variants/contactVariants"
 const ContactForm = () => {
   return (
     <m.form
-      action="https://formsubmit.co/danielidowu414@gmail.com"
+      action="https://formsubmit.co/davididowu172@gmail.com"
       method="POST"
       className="flex flex-col items-center justify-center w-full space-y-6"
       initial={contactFormVariant.name.init}

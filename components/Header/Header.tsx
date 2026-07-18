@@ -18,7 +18,7 @@ const Header = () => {
       : body?.classList.remove("no-scroll")
   }, [isOpen])
 
-   const resumeLink = "https://drive.google.com/file/d/1fSZyeugB-i0imr5G55lmBHr4fpe4xHSb/view?usp=sharing"
+   const resumeLink = "/docs/resume.pdf"
 
   return (
     <header className="flex items-center justify-center  w-full h-16 md:h-20 lg:h-[5rem] bg-body/80 -mb-[1px] fixed top-0 left-0 z-50 shadow-lg px-6 md:px-10 lg:px-14 backdrop-blur-md">

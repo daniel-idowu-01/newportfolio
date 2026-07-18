@@ -20,10 +20,10 @@ const ContactIcon = () => {
         whileInView={contactItemVariant.p1.show}
         viewport={{ once: true }}
       >
-        Do you have an Idea about anything? or want to bring your idea or
-        presence to the web?. Have a chat with me about your idea via any of the
-        links below or send me an email by filling the form below. My inbox is
-        always open.
+        Do you have a dataset that needs untangling, a business question that
+        needs answering, or an opportunity to discuss? Reach me on{" "}
+        <span className="text-cyan">07449 816 627</span>, send an email, or fill
+        the form below. My inbox is always open.
       </m.p>
     </div>
   )

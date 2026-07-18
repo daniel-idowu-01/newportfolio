@@ -32,9 +32,9 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.6 },
             }}
           >
-            <span className=" w-fit">Idowu</span>
+            <span className=" w-fit">David</span>
             <span className="relative text-cyan before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 md:before:h-2 md:before:-bottom-3 before:block before:bg-cyan before:rounded-full">
-              Daniel.
+              Idowu.
             </span>
           </m.h1>
         </div>
@@ -49,7 +49,7 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.7 },
             }}
           >
-            I build things for the web.
+            I turn data into decisions.
           </m.p>
         </div>
         {/* brief about info */}
@@ -63,15 +63,13 @@ const HeroSection = () => {
               transition: { duration: 0.3, delay: 0.8 },
             }}
           >
-            As a<span className="text-cyan"> Fullstack Developer,</span> I
-            specialize in designing, developing, and maintaining secure,
-            scalable, and efficient systems. I leverage{" "}
-            <Text text="modern technologies " /> and best practices to build
-            robust solutions that power{" "}
-            <Text text="high-performance applications " />. My primary goal is
-            to deliver optimized, long-term systems that not only meet but often
-            exceed both the technical requirements of the company and the
-            expectations of clients.
+            As a<span className="text-cyan"> Data Analyst</span> based in
+            Manchester, UK, I am experienced in designing and building robust{" "}
+            <Text text="data pipelines " />, analysing complex datasets using{" "}
+            <Text text="Python " /> and <Text text="SQL " />, and creating
+            compelling visualisations in <Text text="Tableau " /> and{" "}
+            <Text text="Excel " /> to drive informed decision-making and solve
+            business challenges.
           </m.p>
         </div>
         {/* buttons */}
