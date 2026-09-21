@@ -5,9 +5,6 @@ import { projectVariant } from "../variants/projectVariant"
 import projects from "../public/data/projects.json"
 
 const Projects: NextPage = () => {
-  const random = () => {
-    return Math.floor(Math.random() * 2)
-  }
   return (
     <>
       <HeadSection page="Projects" title="Portfolio - Project Page" />
@@ -37,7 +34,7 @@ const Projects: NextPage = () => {
                 link={item.link}
                 liveLink={item.liveLink}
                 builtWith={item.builtWith}
-                orientation={random()}
+                orientation={index % 2}
               />
             ))}
           </section>

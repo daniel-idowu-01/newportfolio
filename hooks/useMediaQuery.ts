@@ -1,42 +1,37 @@
-import { useEffect, useState } from "react"
+import { useCallback, useSyncExternalStore } from "react"
 
 export function useMediaQuery(query: string): boolean {
-  const getMatches = (query: string): boolean => {
-    // Prevents SSR issues
+  const getSnapshot = useCallback((): boolean => {
     if (typeof window !== "undefined") {
       return window.matchMedia(query).matches
     }
     return false
-  }
-
-  const [matches, setMatches] = useState<boolean>(getMatches(query))
-
-  function handleChange() {
-    setMatches(getMatches(query))
-  }
-
-  useEffect(() => {
-    const matchMedia = window.matchMedia(query)
-
-    // Triggered at the first client-side load and if query changes
-    handleChange()
-
-    // Listen matchMedia
-    if (matchMedia.addListener) {
-      matchMedia.addListener(handleChange)
-    } else {
-      matchMedia.addEventListener("change", handleChange)
-    }
-
-    return () => {
-      if (matchMedia.removeListener) {
-        matchMedia.removeListener(handleChange)
-      } else {
-        matchMedia.removeEventListener("change", handleChange)
-      }
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query])
 
-  return matches
+  const subscribe = useCallback(
+    (onChange: () => void) => {
+      if (typeof window === "undefined") {
+        return () => {}
+      }
+
+      const matchMedia = window.matchMedia(query)
+
+      if (matchMedia.addEventListener) {
+        matchMedia.addEventListener("change", onChange)
+      } else {
+        matchMedia.addListener(onChange)
+      }
+
+      return () => {
+        if (matchMedia.removeEventListener) {
+          matchMedia.removeEventListener("change", onChange)
+        } else {
+          matchMedia.removeListener(onChange)
+        }
+      }
+    },
+    [query],
+  )
+
+  return useSyncExternalStore(subscribe, getSnapshot, () => false)
 }

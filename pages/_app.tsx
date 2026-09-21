@@ -4,7 +4,7 @@ import { ContactIcons, ContactIconsMobile, Header } from "../components"
 import { LazyMotion, domAnimation } from "framer-motion"
 import { useMediaQuery } from "../hooks/useMediaQuery"
 import { Raleway } from "next/font/google"
-import { useEffect, useState } from "react"
+import { useSyncExternalStore } from "react"
 
 const poppins = Raleway({
   subsets: ["latin"],
@@ -14,11 +14,11 @@ const poppins = Raleway({
 
 function MyApp({ Component, pageProps }: AppProps) {
   const matches = useMediaQuery("(max-width: 768px)")
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
+  const mounted = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  )
 
   if (!mounted) {
     return null
