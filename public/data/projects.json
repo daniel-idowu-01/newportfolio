@@ -1,11 +1,11 @@
 [
   {
-    "name": "Vendra",
-    "image": "images/projects/vendra.png",
-    "link": "https://github.com/daniel-idowu-01/vendra",
-    "liveLink": "https://vendra-web-gamma.vercel.app/",
-    "about": "Vendra - A WhatsApp-first business operating system for African SMEs.",
-    "builtWith": ["nextjs", "nestjs", "whatsapp cloud api", "gemini", "huggingface", "docker", "postgresql", "tailwindcss"]
+    "name": "Pair Pad",
+    "image": "images/projects/pairpad.png",
+    "link": "https://github.com/daniel-idowu-01/",
+    "liveLink": "https://pair-pad.xyz/",
+    "about": "PairPad - A real-time collaborative code editor.",
+    "builtWith": ["nextjs", "monaco", "yjs", "websockets", "mongodb", "docker"]
   },
   {
     "name": "LendStack",
@@ -38,6 +38,14 @@
     "liveLink": "https://www.npmjs.com/package/dexterdb",
     "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
     "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
+  },
+  {
+    "name": "PneumoTriage",
+    "image": "images/projects/pneumotriage.png",
+    "link": "https://github.com/daniel-idowu-01/pneumotriage",
+    "liveLink": "https://pneumotriage.pair-pad.xyz/",
+    "about": "PneumoTriage - An open-Source pneumonia screening tool.",
+    "builtWith": ["vite", "python", "machine learning", "postgresql", "cloudinary"]
   },
   {
     "name": "Visualab",
