@@ -106,9 +106,16 @@ const About: NextPage = () => (
                 hoverColors[i % hoverColors.length]
               }`}
             >
-              <div className="relative h-8 w-8 transition-transform duration-300 group-hover:rotate-6 md:h-9 md:w-9">
-                <Image src={`/images/${t}.svg`} alt="" fill />
-              </div>
+              {/* The icon files are white (made for the old dark theme), so use them as a
+                  mask and paint them in ink instead. */}
+              <span
+                aria-hidden="true"
+                className="block h-8 w-8 bg-ink transition-transform duration-300 group-hover:rotate-6 md:h-9 md:w-9"
+                style={{
+                  WebkitMask: `url(/images/${t}.svg) center / contain no-repeat`,
+                  mask: `url(/images/${t}.svg) center / contain no-repeat`,
+                }}
+              />
               <span className="font-mono text-xs font-semibold tracking-[0.14em] text-ink">{t.toUpperCase()}</span>
             </div>
           </FadeIn>
