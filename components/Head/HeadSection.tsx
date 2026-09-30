@@ -24,7 +24,10 @@ const HeadSection = ({ title, page }: Props) => {
       />
       <meta property="og:type" content="portfolio" />
       <meta property="og:image" content="" />
-      <link rel="icon" href="/icons/logo.svg" />
+      <link rel="icon" href="/favicon.ico" sizes="48x48" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32.png" />
+      <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png" />
+      <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
     </Head>
   )
 }
