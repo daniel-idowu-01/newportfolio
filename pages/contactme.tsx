@@ -1,20 +1,11 @@
 import type { NextPage } from "next"
 import HeadSection from "../components/Head/HeadSection"
 import { FadeIn, HandLabel, Note } from "../components/Canvas/Bits"
-import { Chevrons, Scribble } from "../components/Canvas/Icons"
+import { Scribble } from "../components/Canvas/Icons"
 import Mascot from "../components/Canvas/Mascot"
 import SelectionBox from "../components/Canvas/SelectionBox"
+import ContactForm from "../components/Sections/ContactForm"
 import { site } from "../lib/site"
-
-const fieldClass =
-  "w-full border-2 border-ink bg-white px-4 py-3.5 text-base text-ink outline-none transition-shadow placeholder:text-gray-400 focus:shadow-[4px_4px_0_var(--c-blue)] focus-visible:shadow-[4px_4px_0_var(--c-blue)]"
-
-const Field = ({ label, children }: { label: string; children: React.ReactNode }) => (
-  <label className="block">
-    <span className="mb-2 block font-mono text-xs font-semibold tracking-[0.16em] text-ink">{label}</span>
-    {children}
-  </label>
-)
 
 const channels = [
   { label: "EMAIL", value: site.email, href: `mailto:${site.email}`, bg: "var(--c-blue)" },
@@ -77,44 +68,7 @@ const ContactMe: NextPage = () => (
                 <span className="h-3 w-3 rounded-full bg-c-green" />
               </span>
             </div>
-            <form action={`https://formsubmit.co/${site.email}`} method="POST" className="flex flex-col gap-6">
-              <Field label="YOUR NAME">
-                <input type="text" name="name" placeholder="What's your name?" className={fieldClass} required />
-              </Field>
-              <Field label="YOUR EMAIL">
-                <input type="email" name="email" placeholder="you@example.com" className={fieldClass} required />
-              </Field>
-              <Field label="MESSAGE">
-                <textarea
-                  name="message"
-                  rows={5}
-                  placeholder="What do you have for me?"
-                  className={`${fieldClass} resize-y`}
-                  data-lenis-prevent
-                  required
-                />
-              </Field>
-              <input type="hidden" name="_captcha" value="false" />
-              <button
-                type="submit"
-                data-hide-cursor
-                className="group mt-2 inline-flex w-fit items-center gap-3 bg-ink py-2.5 pl-2.5 pr-7 font-mono text-sm font-semibold tracking-[0.14em] text-white transition-colors hover:bg-c-blue hover:text-ink"
-              >
-                <span className="flex h-10 w-10 items-center justify-center bg-c-pink" aria-hidden="true">
-                  <span className="h-9 w-9 overflow-hidden rounded-full bg-c-blue text-ink">
-                    <span className="flex h-full w-max animate-arrow-through">
-                      <span className="flex h-full w-9 flex-shrink-0 items-center justify-center">
-                        <Chevrons />
-                      </span>
-                      <span className="flex h-full w-9 flex-shrink-0 items-center justify-center">
-                        <Chevrons />
-                      </span>
-                    </span>
-                  </span>
-                </span>
-                SEND IT
-              </button>
-            </form>
+            <ContactForm />
           </SelectionBox>
         </FadeIn>
       </div>
