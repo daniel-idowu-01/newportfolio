@@ -24,20 +24,20 @@
     "builtWith": ["typescript", "threejs", "rapier"]
   },
   {
-    "name": "Research Paper Analyzer",
-    "image": "images/projects/research-paper-analyzer.jpg",
-    "link": "https://github.com/daniel-idowu-01/research-paper-analyzer",
-    "liveLink": "https://research-paper-analyzer-eta.vercel.app/",
-    "about": "Research Paper Analyzer - A tool that uses AI to analyze and summarize research papers.",
-    "builtWith": ["nextjs", "tailwindcss", "gemini", "mongodb", "cloudinary"]
-  },
-  {
     "name": "DexterDB",
     "image": "images/projects/dexterdb.png",
     "link": "https://github.com/daniel-idowu-01/dexterdb",
     "liveLink": "https://www.npmjs.com/package/dexterdb",
     "about": "DexterDB - A powerful TypeScript Node.js library and CLI tool for automatically generating realistic test data for databases.",
     "builtWith": ["typescript", "fakerjs", "commander", "prisma", "mongodb", "postgresql"]
+  },
+  {
+    "name": "Research Paper Analyzer",
+    "image": "images/projects/research-paper-analyzer.png",
+    "link": "https://github.com/daniel-idowu-01/research-paper-analyzer",
+    "liveLink": "https://research-paper-analyzer-eta.vercel.app/",
+    "about": "Research Paper Analyzer - A tool that uses AI to analyze and summarize research papers.",
+    "builtWith": ["nextjs", "tailwindcss", "gemini", "mongodb", "cloudinary"]
   },
   {
     "name": "PneumoTriage",
